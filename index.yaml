@@ -1,0 +1,11 @@
+apiVersion: v1
+entries:
+  blank-helm-chart:
+  - apiVersion: v2
+    created: "2026-02-08T08:42:43.725793734Z"
+    digest: b7945614d1d62653dd76211ca6e48802f4b23706d582001346efa2bc00081def
+    name: blank-helm-chart
+    urls:
+    - https://win-t.github.io/blank-helm-chart/blank-helm-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2026-02-08T08:42:43.725495066Z"
