@@ -1,0 +1,15 @@
+{{- range .Values.resources }}
+---
+  {{- if kindIs "map" . }}
+    {{- toYaml . | nindent 0 }}
+  {{- else if kindIs "string" . }}
+    {{- tpl . $ | nindent 0 }}
+  {{- else }}
+    {{- fail "expecting string or object" }}
+  {{- end }}
+{{- end }}
+
+{{- with .Values.resourcesString }}
+---
+  {{- tpl . $ | nindent 0 }}
+{{- end }}
